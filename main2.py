@@ -12,6 +12,14 @@ def remove_comments_xml(input_file, output_file):
         f.write(etree.tostring(tree, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
     
     print(f"Comments have removed. Cleaned XML saved to {output_file}")  # filebis  menejmentistvis
+def blank_removal(output_file):
+    with open(output_file, 'r') as file:
+        lines = file.readlines()
+
+    with open(output_file, 'w') as file:
+        for line in lines:
+            if line.strip():  
+                file.write(line)
 
 # file-is martivad sherchevistvis ubralod GUI designi
 def select_file():
@@ -31,6 +39,9 @@ def select_file():
         if output_file:
             # moshoreba da saboloo shenaxva 
             remove_comments_xml(input_file, output_file)
+            blank_removal(output_file)
+            print("Extra blank lines have been removed.")
+
 
 # GUI
 root = tk.Tk()
