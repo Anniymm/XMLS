@@ -1,23 +1,44 @@
-# XML files validator
+# ❗XML Files Validator
 
-``` bash
+This project provides tools to clean XML files by removing comments and blank lines. It includes two Python scripts to handle these tasks.
+
+## Getting Started
+
+Follow these steps to set up the project and use the scripts:
+
+### Clone the Repository
+```bash
 git clone https://github.com/Anniymm/XMLS.git
 ```
-``` bash
+
+### Navigate to the Project Directory
+```bash
 cd XMLS
 ```
-## install requiremets
-``` bash
+
+### Install Required Packages
+
+Install the necessary Python packages:
+```bash
 pip install tkinter
-```
-``` bash
 pip install lxml
 ```
-## comments & blanks
-``` bash
+
+## Usage
+
+### Remove Comments and Blank Lines
+Run the following command to remove both comments and blank lines from XML files:
+```bash
 python main2.py
 ```
- ## comments
- ``` bash
+
+### Remove Comments Only
+Run the following command to remove only comments from XML files:
+```bash
 python main.py
 ```
+
+## Additional Information
+
+- Ensure that the XML files you wish to process are located in the appropriate directory as required by the scripts.
+- The processed files will be saved or updated based on the logic implemented in the scripts.
