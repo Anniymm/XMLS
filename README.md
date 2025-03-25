@@ -39,6 +39,4 @@ python main.py
 ```
 
 ## Additional Information
-
-- Ensure that the XML files you wish to process are located in the appropriate directory as required by the scripts.
 - The processed files will be saved or updated based on the logic implemented in the scripts.
