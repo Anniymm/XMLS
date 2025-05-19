@@ -1,6 +1,6 @@
 # ❗XML Files Validator
 
-This project provides tools to clean XML files by removing comments and blank lines. It includes two Python scripts to handle these tasks.
+This project provides tools to clean XML files by removing comments and blank lines. It includes two different Python scripts to handle these tasks.
 
 ## Getting Started
 
